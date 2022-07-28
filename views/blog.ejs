@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background: rgb(189, 183, 183);
+        }
+        
+        .container {
+            background: white;
+            height: 1820px;
+            width: 1000px;
+            position: absolute;
+            margin-left: 200px;
+        }
+        
+        #main {
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        
+        #title {
+            font-size: 15px;
+            width: 550px;
+            height: 50px;
+            margin-left: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        #content {
+            font-size: 15px;
+            height: 1250px;
+            margin: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        #author {
+            font-size: 15px;
+            height: 300px;
+            margin: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p id="main">Noor's Blog</p>
+        <div id="title">
+            <%= title %>
+        </div>
+        <div id="content">
+            <%= content %>
+        </div>
+        <div id="author">
+            <%= author %>
+        </div>
+    </div>
+</body>
+
+</html>
